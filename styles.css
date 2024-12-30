@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    color: white;
+    background-color: #283F6C;
+}
+
+.wrapper {
+    padding: 100px 200px 0 200px;
+    display: flex;
+}
+
+.navbar {
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.navbar__name {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.5;
+    letter-spacing: 3px;
+}
+
+.navbar__title {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: normal;
+    letter-spacing: 6px;
+}
+
+.navbar__links {
+    list-style: none;
+    padding-left: 0;
+    margin: 4rem 0 0 0;
+}
+
+.navbar__link {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    font-weight: normal;
+    color: #C5CADF;
+}
+
+.navbar__link--active {
+    color: white;
+}
+
+.introduction {
+    line-height: 2;
+    margin: 0 0 1rem;
+}
+
+.introduction--first {
+    margin-top: 0.5rem;
+}
+
+.pills {
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.pills--first {
+    margin-top: 6rem;
+}
+
+.pill {
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    padding: 0.5rem 3rem;
+    border: 1px solid #557CDB;
+    border-radius: 12px;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+.employment {
+    margin-top: 4rem;
+}
+
+.employment--last {
+    margin-bottom: 4rem;
+}
+
+.employment_header {
+    display: flex;
+    line-height: 1.5rem;
+}
+
+.employment__company {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 0.75rem;
+}
+
+.employment__duration {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.employment__details {
+    margin-top: 0.75rem;
+}
+
+.employment__portifolio-items {
+    display: flex;
+}
+
+.employment__portifolio-item {
+    margin-right: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.employment__portifolio-item__name {
+    margin-left: 0.6rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    border-top: 1px solid #C5CADF;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    margin-right: 2rem;
+}
