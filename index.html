@@ -9,26 +9,54 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <h1 class="navbar__name">
+            Kinyua Mwaniki
+        </h1>
+        <h3 class="navbar__title">
+            Test Driven Developer
+        </h3>
+        <ul class="navbar__links">
+            <li class="navbar__link navbar__link--active">
+                <a href="#about-me">
+                    About Me
+                </a>
+            </li>
+            <li class="navbar__link">
+                <a href="#languages">
+                    Languages
+                </a>
+            </li>
+            <li class="navbar__link">
+                <a href="#databases">
+                    Databases
+                </a>
+            </li>
+            <li class="navbar__link">
+                <a href="#frameworks">
+                    Frameworks
+                </a>
+            </li>
+            <li class="navbar__link">
+                <a href="#testing-libraries">
+                    Testing Libraries
+                </a>
+            </li>
+            <li class="navbar__link">
+                <a href="#employment">
+                    Experience
+                </a>
+            </li>
+            <li class="navbar__link">
+                <a href="#contacts">
+                    Contacts
+                </a>
+            </li>
+        </ul>
+    </nav>
     <div class="wrapper">
-        <nav class="navbar">
-            <h1 class="navbar__name">
-                Kinyua Mwaniki
-            </h1>
-            <h3 class="navbar__title">
-                Test Driven Developer
-            </h3>
-            <ul class="navbar__links">
-                <li class="navbar__link navbar__link--active">About Me</li>
-                <li class="navbar__link">Languages</li>
-                <li class="navbar__link">Databases</li>
-                <li class="navbar__link">Frameworks</li>
-                <li class="navbar__link">Testing Libraries</li>
-                <li class="navbar__link">My employment</li>
-                <li class="navbar__link">Contacts</li>
-            </ul>
-        </nav>
         <main>
-            <p class="introduction introduction--first">
+            <p class="introduction introduction--first" id="about-me">
                 Hi, welcome to my website. I have 5 years full stack development employment. Even though Laravel is my
                 first
                 love, I also enjoy
@@ -43,28 +71,28 @@
                 I am an enthusiastic unit and integration tester who aims for the cleanest
                 and leanest code.
             </p>
-            <div class="pills pills--first">
+            <div class="pills pills--first" id="languages">
                 <div class="pill">PHP</div>
                 <div class="pill">JAVASCRIPT</div>
                 <div class="pill">CSS</div>
                 <div class="pill">HTML</div>
             </div>
-            <div class="pills">
+            <div class="pills" id="databases">
                 <div class="pill">MYSQL</div>
                 <div class="pill">POSTGRES</div>
                 <div class="pill">MONGODB</div>
             </div>
-            <div class="pills">
+            <div class="pills" id="frameworks">
                 <div class="pill">LARAVEL</div>
                 <div class="pill">EXPRESSJS</div>
                 <div class="pill">VUEJS</div>
                 <div class="pill">REACTJS</div>
             </div>
-            <div class="pills">
+            <div class="pills" id="testing-libraries">
                 <div class="pill">JEST</div>
                 <div class="pill">PHPUNIT</div>
             </div>
-            <div class="employment">
+            <div class="employment" id="employment">
                 <div class="employment_header">
                     <span class="employment__company">
                         TIER DATA LIMITED
@@ -133,7 +161,7 @@
             </div>
         </main>
     </div>
-    <footer>
+    <footer id="contacts">
         <img src="./images/Ebunishow.png" alt="Ebunishow Logo">
         <div class="socials">
             <a href="http://" class="social">

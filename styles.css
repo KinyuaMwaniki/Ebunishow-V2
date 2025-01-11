@@ -12,19 +12,20 @@ body {
 }
 
 .wrapper {
-    padding: 100px 200px 0 200px;
     display: flex;
+    justify-content: end;
 }
 
 .navbar {
-    flex-basis: 40%;
-    flex-grow: 0;
-    flex-shrink: 0;
+    padding-top: 100px;
+    padding-left: 200px;
+    position: fixed;
+    width: 45%;
 }
 
 .navbar__name {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.5;
     letter-spacing: 3px;
 }
@@ -50,8 +51,17 @@ body {
     color: #C5CADF;
 }
 
+.navbar__link a {
+    color: white;
+}
+
 .navbar__link--active {
     color: white;
+}
+
+main {
+    padding: 100px 200px 0 0px;
+    width: 55%;
 }
 
 .introduction {
