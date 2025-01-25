@@ -12,9 +12,28 @@ body {
     margin-top: 0px;
 }
 
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: none;
+}
+
 .wrapper {
     display: flex;
     justify-content: end;
+}
+
+.mobile-navbar {
+    display: none;
 }
 
 .navbar {
@@ -24,14 +43,16 @@ body {
     width: 45%;
 }
 
-.navbar__name {
+.navbar__name,
+.personal-details__name {
     margin: 0;
     font-size: 2.5rem;
     line-height: 1.5;
     letter-spacing: 3px;
 }
 
-.navbar__title {
+.navbar__title,
+.personal-details__title {
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -144,6 +165,7 @@ main {
 
 .employment__portifolio-items {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .employment__portifolio-item {
@@ -172,4 +194,100 @@ footer {
 
 .social {
     margin-right: 2rem;
+}
+
+@media (max-width: 87rem) {
+    .navbar {
+        padding-left: 100px;
+    }
+
+    main {
+        padding-right: 100px;
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 48rem) {
+    header {
+        padding: 0 60px;
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-header__hamburger {
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-header__hamburger-image {
+        height: 50px;
+    }
+
+    .personal-details__name {
+        line-height: 1.2;
+    }
+
+    .personal-details__title {
+        line-height: 1.2;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        background: #030C1D;
+        width: 80%;
+        height: 100vh;
+    }
+
+    .mobile-navbar.open,
+    .backdrop.open {
+        display: block;
+    }
+
+    .navbar__links {
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+
+    .navbar__link {
+        margin-bottom: 1.5rem;
+    }
+
+    main {
+        margin-top: 2.5rem;
+        padding-right: 60px;
+        width: 100%;
+        border-left: none
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer__logo {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .mobile-header__hamburger-image {
+        height: 25px;
+    }
+
+    .personal-details__name {
+        font-size: 1rem;
+    }
+
+    .personal-details__title {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
 }
