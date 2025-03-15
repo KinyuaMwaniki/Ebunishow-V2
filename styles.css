@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-bg-color: #283F6C;
+    --light-blue-color: #C5CADF;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     color: white;
-    background-color: #283F6C;
+    background-color: var(--main-bg-color);
+    ;
     margin: 0;
     margin-top: 0px;
 }
@@ -70,7 +76,7 @@ header {
     margin-bottom: 1rem;
     text-decoration: underline;
     font-weight: normal;
-    color: #C5CADF;
+    color: var(--light-blue-color);
 }
 
 .navbar__link a {
@@ -84,7 +90,7 @@ header {
 main {
     margin-top: 100px;
     padding-left: 30px;
-    border-left: 1px solid #557CDB;
+    border-left: 1px solid var(--main-bg-color);
     padding-right: 200px;
     width: 55%;
 }
@@ -104,7 +110,8 @@ main {
     margin-top: 3rem;
     text-align: center;
     flex-wrap: wrap;
-    color: #C5CADF;
+    color: var(--light-blue-color);
+
 }
 
 .pills:target {
@@ -122,10 +129,19 @@ main {
     font-size: 0.75rem;
     letter-spacing: 3px;
     padding: 0.5rem 3rem;
-    border: 1px solid #557CDB;
+    border: 1px solid var(--main-bg-color);
     border-radius: 12px;
     margin-right: 3rem;
     margin-top: 2rem;
+    cursor: pointer;
+    transition-property: border, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.pill:hover {
+    color: white;
+    border: 1px solid white;
 }
 
 .pills:target .pill {
@@ -177,6 +193,8 @@ main {
 
 .employment__portifolio-item__name {
     margin-left: 0.6rem;
+    color: white;
+    text-decoration: none;
 }
 
 footer {
@@ -184,7 +202,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px 200px;
-    border-top: 1px solid #C5CADF;
+    border-top: 1px solid var(--light-blue-color);
 }
 
 .socials {
