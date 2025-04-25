@@ -220,13 +220,13 @@ footer {
 
     main {
         padding-right: 100px;
-        padding-left: 60px;
+        padding-left: 3rem;
     }
 }
 
 @media (max-width: 48rem) {
     header {
-        padding: 0 60px;
+        padding: 0 3rem;
         margin-top: 2.5rem;
         display: flex;
         justify-content: space-between;
@@ -280,7 +280,7 @@ footer {
 
     main {
         margin-top: 2.5rem;
-        padding-right: 60px;
+        padding-right: 3rem;
         width: 100%;
         border-left: none
     }
@@ -301,10 +301,15 @@ footer {
 
     .personal-details__name {
         font-size: 1rem;
+        margin-bottom: .5rem;
     }
 
     .personal-details__title {
         font-size: 0.75rem;
         letter-spacing: 2px;
+    }
+
+    .employment__portifolio-item {
+        margin-bottom: 0.5rem;
     }
 }
